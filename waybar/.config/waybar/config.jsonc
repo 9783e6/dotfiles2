@@ -1,7 +1,8 @@
 {
+  "height":42,
   "modules-left": ["mango/workspaces", "mango/layout", "mango/window"],
-  "modules-center": ["mpris"],
-  "modules-right": ["tray", "mango/language", "wireplumber", "clock"],
+  "modules-center": [],
+  "modules-right": ["tray", "mango/language", "backlight", "battery", "power-profiles-daemon", "wireplumber", "clock"],
   "mango/workspaces": {
     "format": "{icon}",
     "hide-empty": false,
@@ -30,4 +31,47 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format": "{:%Y-%m-%d %H:%M}"
   },
+  "tray": {
+    "spacing": 10
+  },
+  "battery": {
+        //"states": {
+            // "good": 95,
+            //"warning": 30,
+            //"critical": 15
+        //},
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰃨",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nCPU driver: {cpu_driver}\nPlatform driver: {platform_driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "min-brightness": 1
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "󰅶",
+        "format-icons": ["", "", ""],
+        "on-click": "helvum",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        //"scroll-step": 5
+    },
 }
