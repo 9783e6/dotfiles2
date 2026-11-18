@@ -1,0 +1,33 @@
+{
+  "modules-left": ["mango/workspaces", "mango/layout", "mango/window"],
+  "modules-center": ["mpris"],
+  "modules-right": ["tray", "mango/language", "wireplumber", "clock"],
+  "mango/workspaces": {
+    "format": "{icon}",
+    "hide-empty": false,
+    "on-click": "activate",
+    "on-click-right": "toggle",
+    "overview-label": "OVERVIEW",
+  },
+  "mango/keymode": {
+    "format": "{}",
+    // "format-default": " Default",
+    // "format-test": " Test",
+  },
+  "mango/window": {
+    "format": "{}",
+    "icon-size": 20,
+  },
+  "mango/layout": {
+    "format": "{}",
+    // "format-S": "Scroller",
+    // "format-T": "Tile",
+  },
+  "mango/language": {
+    "format": "{short}",
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%Y-%m-%d %H:%M}"
+  },
+}

@@ -1,0 +1,146 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #000000;
+    color: #d0d0d0;
+}
+
+/* ========================================
+   WORKSPACES
+======================================== */
+
+#workspaces {
+    margin: 0;
+    padding: 0 5px;
+}
+
+#workspaces button {
+    color: #ffffff;
+    background: #202020;
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-bottom: 2px solid #555555;
+}
+
+#workspaces button.empty {
+    color: #454545;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+    color: #000000;
+    background: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+#workspaces button:not(.current_output) {
+    opacity: 0.65;
+}
+
+#workspaces button.active.current_output {
+    opacity: 1;
+}
+
+#workspaces button.urgent {
+    color: #ffffff;
+    background: #351414;
+    border-bottom: 2px solid #ff5555;
+}
+
+#workspaces button.overview {
+    color: #aaaaaa;
+    background: #151515;
+    border-bottom: 2px solid #777777;
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: #303030;
+}
+
+/* ========================================
+   LEFT MODULES
+======================================== */
+
+/* Layout */
+#layout {
+    color: #999999;
+    padding: 0 12px;
+}
+
+/* Window title */
+#window {
+    color: #777777;
+    padding: 0 12px;
+}
+
+/* ========================================
+   CENTER MODULES
+======================================== */
+
+/* Media player */
+#mpris {
+    color: #aaaaaa;
+    padding: 0 12px;
+}
+
+/* ========================================
+   RIGHT MODULES
+======================================== */
+
+/* System tray */
+#tray {
+    color: #aaaaaa;
+    padding: 0 10px;
+}
+
+/* Language */
+#language {
+    color: #999999;
+    padding: 0 12px;
+}
+
+/* Volume */
+#wireplumber {
+    color: #d0d0d0;
+    padding: 0 12px;
+}
+
+#wireplumber.muted {
+    color: #555555;
+}
+
+/* Clock */
+#clock {
+    color: #ffffff;
+    background: #181818;
+    padding: 0 12px;
+    margin: 4px 8px 4px 4px;
+}
+
+/* ========================================
+   TOOLTIP
+======================================== */
+
+tooltip {
+    background: #080808;
+    color: #ffffff;
+    border: 1px solid #333333;
+}
+
+tooltip label {
+    color: #ffffff;
+    padding: 5px;
+}
