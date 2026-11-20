@@ -1,0 +1,48 @@
+# might not be full!
+
+
+noto-fonts
+noto-fonts-extra
+noto-fonts-emoji
+noto-fonts-cjk
+
+ttf-jetbrains-mono-nerd
+
+
+# audio
+wireplumber
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+
+# login
+greetd
+greetd-tuigreet / tuigreet
+
+# desktop
+mangowm
+waybar
+fuzzel
+grim
+slurp
+wl-clipboard
+
+
+
+
+
+
+# NVIM
+neovim
+tree-sitter-cli
+
+
+
+
+# laptop
+brightnessctl
+tuned
+tuned-ppd
+
+
