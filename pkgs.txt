@@ -37,6 +37,7 @@ ghostty
 # NVIM
 neovim
 tree-sitter-cli
+ripgrep
 
 
 
