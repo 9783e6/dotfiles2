@@ -38,6 +38,7 @@ ghostty
 neovim
 tree-sitter-cli
 ripgrep
+npm     # For pyright
 
 
 
